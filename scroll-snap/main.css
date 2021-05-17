@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    overflow: auto;
+    overscroll-behavior: contain;
+    height: 320px;
+}
+
+.h-scroll {
+    flex-direction: row;
+    width: 600px;
+}
+
+.v-scroll {
+    flex-direction: column;
+}
+
+ul>li {
+    margin: 10px 0;
+    scroll-snap-align: start;
+}
+
+.scroll-mand-x {
+    scroll-snap-type: x mandatory;
+}
+
+.scroll-mand-y {
+    scroll-snap-type: y mandatory;
+}
